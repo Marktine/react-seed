@@ -16,7 +16,12 @@ module.exports = {
         }, {
             test: /\.less$/,
             loaders: ['style-loader', 'css-loader', 'less-loader']
-        }]
+        },
+        {
+            test: /\.css$/,
+            loader:['style-loader', 'css-loader']
+        }
+    ]
     },
     output: {
         path: parentDir + '/dist',
